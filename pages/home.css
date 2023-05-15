@@ -1,0 +1,16 @@
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.75);
+    opacity: 0.5;
+  }
+}
+
+.main-image {
+  animation-name: scaleDown;
+  animation-duration: 1s; /* Adjust the duration as needed */
+  animation-fill-mode: both;
+}

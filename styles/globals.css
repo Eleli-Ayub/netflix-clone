@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+
+    object-fit: cover;
+  }
+}
+
+.main-image {
+  animation-name: scaleDown;
+  animation-duration: 5s; /* Adjust the duration as needed */
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
